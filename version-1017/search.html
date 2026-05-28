@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影片搜索-高分亚洲影片-高分电影排行榜-高清影片在线观看</title>
+    <meta name="description" content="搜索高分亚洲影片、电影排行榜、高清影片与精选片单内容。">
+    <meta name="keywords" content="影片搜索,高分亚洲影片,亚洲影片,高分电影,电影排行榜,高清影片,精选片单,热门影片">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="brand" href="./index.html" aria-label="高分亚洲影片">
+            <span class="brand-mark">▶</span>
+            <span>高分亚洲影片</span>
+        </a>
+        <nav class="main-nav" aria-label="主导航">
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">分类</a>
+            <a href="./ranking.html">排行榜</a>
+            <a href="./search.html">搜索</a>
+        </nav>
+        <form class="header-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影片、地区、类型" autocomplete="off">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="mobile-toggle" type="button" aria-label="打开导航" data-menu-toggle>☰</button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+        <form action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+    <div class="category-strip" aria-label="精选分类">
+        <div class="category-strip-inner">
+            <a href="./category/asia-selection.html">高分亚洲精选</a>
+            <a href="./category/chinese-acclaimed.html">华语口碑片单</a>
+            <a href="./category/japan-korea-popular.html">日韩人气榜</a>
+            <a href="./category/action-crime.html">动作犯罪热映</a>
+            <a href="./category/suspense-thriller.html">悬疑惊悚剧场</a>
+            <a href="./category/romance-drama.html">爱情剧情佳作</a>
+            <a href="./category/fantasy-adventure.html">奇幻冒险大片</a>
+            <a href="./category/comedy-family.html">喜剧家庭片场</a>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="page-hero search-hero">
+<div>
+<span class="eyebrow">影片搜索</span>
+<h1>搜索高分影片与精选片单</h1>
+<p>输入影片名、地区、年份、标签或类型，即可筛选站内影片。</p>
+</div>
+</section>
+<section class="content-section">
+<div class="search-workspace">
+<form class="large-search" action="./search.html" method="get" data-search-form>
+<input type="search" name="q" placeholder="例如：亚洲影片、悬疑、2024、中国香港" data-search-input autocomplete="off">
+<button type="submit">开始搜索</button>
+</form>
+<div class="filter-row">
+<select data-search-region><option value="">全部地区</option></select>
+<select data-search-year><option value="">全部年份</option></select>
+<select data-search-sort>
+<option value="relevance">综合排序</option>
+<option value="score">评分优先</option>
+<option value="year">年份优先</option>
+</select>
+</div>
+<p class="result-count" data-result-count></p>
+<div class="movie-grid" data-search-results></div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand">高分亚洲影片</div>
+            <p>围绕亚洲影片、高分电影榜单和高清影片片单进行整理，提供清晰的分类浏览与详情内容。</p>
+        </div>
+        <div>
+            <h2>站内导航</h2>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./categories.html">分类总览</a></li>
+                <li><a href="./ranking.html">高分排行榜</a></li>
+                <li><a href="./search.html">影片搜索</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>精选分类</h2>
+            <ul>
+                <li><a href="./category/asia-selection.html">高分亚洲精选</a></li>
+                <li><a href="./category/chinese-acclaimed.html">华语口碑片单</a></li>
+                <li><a href="./category/japan-korea-popular.html">日韩人气榜</a></li>
+                <li><a href="./category/action-crime.html">动作犯罪热映</a></li>
+                <li><a href="./category/suspense-thriller.html">悬疑惊悚剧场</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>热门关键词</h2>
+            <div class="footer-tags">
+                <a href="./search.html?q=高分亚洲影片">高分亚洲影片</a>
+                <a href="./search.html?q=电影排行榜">电影排行榜</a>
+                <a href="./search.html?q=高清影片">高清影片</a>
+                <a href="./search.html?q=精选片单">精选片单</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 高分亚洲影片 · 高分影片与精选片单浏览</div>
+</footer>
+
+<script src="./assets/search-data.js"></script>
+<script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
